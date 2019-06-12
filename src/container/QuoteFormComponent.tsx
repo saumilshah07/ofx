@@ -86,7 +86,7 @@ class QuoteFormComponent extends Component<TProps, TState> {
     } else {
       if (fields.toCurrency === fields.fromCurrency) {
         isValid = false;
-        errors.toCurrency = "To Currency and From currency must be same.";
+        errors.toCurrency = "To Currency and From currency must not same.";
       }
     }
 
