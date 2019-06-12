@@ -1,10 +1,10 @@
 import React from "react";
-import QuoteContainer from "./container/QuoteComponent";
+import QuoteFormComponent from "./container/QuoteFormComponent";
 
 const App: React.FC = () => {
   return (
     <div className="app">
-      <QuoteContainer />
+      <QuoteFormComponent />
     </div>
   );
 };

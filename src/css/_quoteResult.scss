@@ -1,23 +1,30 @@
-.quote-form-component {
-  background-color: $primary-background;
+.quote-result-component {
+  background-color: $secondary-background;
   border: $border-color 1px solid;
   box-shadow: 1px $border-color;
-
-  .row:last-child {
-    padding-bottom: 16px;
-  }
+  padding: 16px 0px;
   .row {
-    padding-top: 16px;
-    background-color: $primary-background;
-    label {
-      margin-bottom: 2px;
-      font-size: 12px;
+    padding: 0px;
+    justify-content: center;
+    span {
+      letter-spacing: 1px;
     }
-    label.required::after {
-      content: "*";
-      color: red;
-      font-size: 18px;
-      padding-left: 4px;
+    span.info {
+      font-size: 22px;
+      font-weight: 300;
+    }
+    span.current-rate {
+      color: $rate;
+      font-size: 44px;
+      font-weight: 400;
+    }
+    span.currency,
+    span.amount {
+      font-size: 26px;
+    }
+    span.amount {
+      margin-left: 4px;
+      color: $secondary-color;
     }
 
     .btn-outline-secondary:hover,
@@ -38,7 +45,7 @@
       background-color: $secondary-color;
     }
   }
-  .row:nth-child(2) {
-    background-color: $secondary-background;
+  .row:last-child {
+    padding: 16px 0px;
   }
 }
