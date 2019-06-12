@@ -181,7 +181,7 @@ class QuoteFormComponent extends Component<TProps, TState> {
         {status !== "success" && (
           <Container className="quote-form-component">
             <Form noValidate onSubmit={this.handleSubmit}>
-              {status == "error" && (
+              {status === "error" && (
                 <Row>
                   <Col sm={12} md={12} xl={12} className="text-center">
                     <Alert variant="danger">
